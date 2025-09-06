@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model admins {
+  username String @id @db.VarChar(50)
+  password String @db.VarChar(100)
+}
+
+model sessions {
+  id         Int             @id @default(autoincrement())
+  student_id String          @db.VarChar(20)
+  entry_time DateTime        @db.DateTime(0)
+  exit_time  DateTime?       @db.DateTime(0)
+  status     sessions_status
+  students   students        @relation(fields: [student_id], references: [student_id], onDelete: Cascade, map: "fk_student")
+
+  @@index([student_id], map: "fk_student")
+}
+
+model students {
+  student_id String     @id @db.VarChar(20)
+  name       String     @db.VarChar(100)
+  password   String     @db.VarChar(255)
+  course     String     @db.VarChar(100)
+  department String     @db.VarChar(100)
+  created_at DateTime?  @default(now()) @db.Timestamp(0)
+  sessions   sessions[]
+}
+
+enum sessions_status {
+  IN
+  OUT
+}
+

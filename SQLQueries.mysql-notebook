@@ -1,0 +1,577 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "DB Notebook",
+    "content": "\\about\nuse library\n\nSELECT * from sessions\nSELECT * FROM students\nINSERT INTO students (student_id, name, password, course, department)\nVALUES\n('24204031106', 'Ayush Gupta', 'ayush', 'MCA', 'Computer Science')\n\n",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 10,
+                    "column": 1
+                },
+                "position": {
+                    "lineNumber": 10,
+                    "column": 1
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 5,
+                "column": 1
+            },
+            "firstPositionDeltaTop": 189
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 1,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "content": "Welcome to the MySQL Shell - DB Notebook.\n\nPress Ctrl+Enter to execute the code block.\n\nExecute \\sql to switch to SQL, \\js to JavaScript and \\ts to TypeScript mode.\nExecute \\help or \\? for help;",
+                            "language": "ansi"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 6
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 2,
+                "end": 3,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "index": 0,
+                            "resultId": "9cff2bd0-b9cb-47a5-da45-6b2271cf5971",
+                            "content": "OK, 0 records retrieved in 1.204ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 12
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 4,
+                "end": 4,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "695055ea-a541-4262-ada0-d9bb9eb86ead"
+                    ]
+                },
+                "currentHeight": 277,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 22
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "a219912b-ec53-406c-9722-774ea0938c0a",
+                    "resultId": "695055ea-a541-4262-ada0-d9bb9eb86ead",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": "24204031111",
+                            "2": "Paaji ",
+                            "3": "MCA",
+                            "4": "2025-08-18 11:49:14",
+                            "5": "2025-08-18 11:49:35",
+                            "6": "OUT"
+                        },
+                        {
+                            "0": 2,
+                            "1": "24204031211",
+                            "2": "Deepanshu Saini ",
+                            "3": "Master of Computer Applications",
+                            "4": "2025-08-18 11:55:56",
+                            "5": "2025-08-18 13:31:33",
+                            "6": "OUT"
+                        },
+                        {
+                            "0": 3,
+                            "1": "24204031211",
+                            "2": "Deepanshu Saini ",
+                            "3": "Master of Computer Applications",
+                            "4": "2025-08-18 13:37:44",
+                            "5": "2025-08-18 13:37:47",
+                            "6": "OUT"
+                        },
+                        {
+                            "0": 4,
+                            "1": "24204031211",
+                            "2": "Deepanshu Saini ",
+                            "3": "Master of Computer Applications",
+                            "4": "2025-08-18 13:37:51",
+                            "5": "2025-08-18 13:37:54",
+                            "6": "OUT"
+                        },
+                        {
+                            "0": 5,
+                            "1": "24204031211",
+                            "2": "Deepanshu Saini ",
+                            "3": "Master of Computer Applications",
+                            "4": "2025-08-18 13:37:57",
+                            "5": "2025-08-18 13:38:00",
+                            "6": "OUT"
+                        },
+                        {
+                            "0": 6,
+                            "1": "24204031211",
+                            "2": "Deepanshu Saini ",
+                            "3": "Master of Computer Applications",
+                            "4": "2025-08-18 13:38:03",
+                            "5": "2025-08-18 13:38:06",
+                            "6": "OUT"
+                        },
+                        {
+                            "0": 7,
+                            "1": "24204031211",
+                            "2": "Deepanshu Saini ",
+                            "3": "Master of Computer Applications",
+                            "4": "2025-08-18 13:38:10",
+                            "5": "2025-08-18 13:38:13",
+                            "6": "OUT"
+                        },
+                        {
+                            "0": 8,
+                            "1": "24204031211",
+                            "2": "Deepanshu Saini ",
+                            "3": "Master of Computer Applications",
+                            "4": "2025-08-18 13:38:16",
+                            "5": "2025-08-18 13:38:19",
+                            "6": "OUT"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "student_id",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "student_name",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "course",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "entry_time",
+                            "field": "4",
+                            "dataType": {
+                                "type": 26,
+                                "dateTimePrecision": 8,
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "exit_time",
+                            "field": "5",
+                            "dataType": {
+                                "type": 26,
+                                "dateTimePrecision": 8,
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "status",
+                            "field": "6",
+                            "dataType": {
+                                "type": 43,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 8 records retrieved in 0.874ms"
+                    },
+                    "totalRowCount": 8,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * from sessions",
+                    "updatable": true,
+                    "fullTableName": "sessions"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 5,
+                "end": 5,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "9ede9f53-18ce-4388-d8b2-9aee2e442453"
+                    ]
+                },
+                "currentHeight": 186,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 22
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "a219912b-ec53-406c-9722-774ea0938c0a",
+                    "resultId": "9ede9f53-18ce-4388-d8b2-9aee2e442453",
+                    "rows": [
+                        {
+                            "0": "24204031107",
+                            "1": "Avinash",
+                            "2": "avinash",
+                            "3": "MCA",
+                            "4": "MBC",
+                            "5": "2025-08-18 18:52:50"
+                        },
+                        {
+                            "0": "24204031111",
+                            "1": "SharanDeep Singh",
+                            "2": "paaji",
+                            "3": "B.Tech",
+                            "4": "CSE",
+                            "5": "2025-08-18 18:52:50"
+                        },
+                        {
+                            "0": "24204031207",
+                            "1": "Vatsal",
+                            "2": "vatsal",
+                            "3": "MCA",
+                            "4": "MBC",
+                            "5": "2025-08-18 18:52:50"
+                        },
+                        {
+                            "0": "24204031211",
+                            "1": "Deepanshu",
+                            "2": "deepu2002",
+                            "3": "MCA",
+                            "4": "MBC",
+                            "5": "2025-08-18 18:52:50"
+                        },
+                        {
+                            "0": "24204031212",
+                            "1": "Garvit",
+                            "2": "garvit",
+                            "3": "B.Tech",
+                            "4": "ECE",
+                            "5": "2025-08-18 18:52:50"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "student_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "name",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "password",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "course",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "department",
+                            "field": "4",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "created_at",
+                            "field": "5",
+                            "dataType": {
+                                "type": 26,
+                                "dateTimePrecision": 8,
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": "CURRENT_TIMESTAMP"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 5 records retrieved in 1.229ms"
+                    },
+                    "totalRowCount": 5,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM students",
+                    "updatable": true,
+                    "fullTableName": "students"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 6,
+                "end": 9,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "index": 0,
+                            "resultId": "05989d35-1542-401a-b77c-0b57f28892d6",
+                            "content": "OK, 1 row affected in 2.106ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 144
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 10,
+                "end": 10,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 0
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}
