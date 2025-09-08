@@ -9,6 +9,7 @@ import { student } from "./routes/student.route";
 import { CronJob } from "cron";
 import { PORT, JWT_SECRET } from "./constants/constants";
 import prisma from "./config/prisma";
+import { errorHandler } from "./middlewares/errorHandler";
 dotenv.config();
 
 const app = express();
@@ -101,11 +102,14 @@ const job = new CronJob("0 22 * * *", async () => {
 });
 job.start();
 
+// Error Handling Middleware
+app.use(errorHandler);
+
 
 app.use("/", (_, res) => {
   res.json({ connected: true });
 });
 
 app.listen(PORT, () => {
-  console.log("🚀 Server running on port " + PORT);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
