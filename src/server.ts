@@ -10,6 +10,7 @@ import { CronJob } from "cron";
 import { PORT, JWT_SECRET } from "./constants/constants";
 import prisma from "./config/prisma";
 import { errorHandler } from "./middlewares/errorHandler";
+import { AppError } from "./utils/AppError";
 dotenv.config();
 
 const app = express();
@@ -102,12 +103,24 @@ const job = new CronJob("0 22 * * *", async () => {
 });
 job.start();
 
-// Error Handling Middleware
+// ✅ Catch-all for 404 (no route found)
+app.all("*", (req, res, next) => {
+  next(new AppError(`Cannot find ${req.originalUrl} on this server`, 404));
+});
+
+// ✅ Global error middleware
 app.use(errorHandler);
 
+// ✅ Handle uncaught exceptions
+process.on("uncaughtException", (err) => {
+  console.error("Uncaught Exception 💥:", err);
+  process.exit(1);
+});
 
-app.use("/", (_, res) => {
-  res.json({ connected: true });
+// ✅ Handle unhandled promise rejections
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled Rejection 💥 at:", promise, "reason:", reason);
+  process.exit(1);
 });
 
 app.listen(PORT, () => {

@@ -2,7 +2,7 @@
     "type": "MySQLNotebook",
     "version": "1.0",
     "caption": "DB Notebook",
-    "content": "\\about\nuse library\n\nSELECT * from sessions\nSELECT * FROM students\nINSERT INTO students (student_id, name, password, course, department)\nVALUES\n('24204031106', 'Ayush Gupta', 'ayush', 'MCA', 'Computer Science')\n\n",
+    "content": "\\about\nuse library;\nShow TABLES\n\nSELECT * from sessions\nSELECT * FROM students\nINSERT INTO students (student_id, name, password, course, department)\nVALUES\n('24204031106', 'Ayush Gupta', 'ayush', 'MCA', 'Computer Science')\n\n",
     "options": {
         "tabSize": 4,
         "indentSize": 4,
@@ -15,22 +15,22 @@
             {
                 "inSelectionMode": false,
                 "selectionStart": {
-                    "lineNumber": 10,
-                    "column": 1
+                    "lineNumber": 5,
+                    "column": 23
                 },
                 "position": {
-                    "lineNumber": 10,
-                    "column": 1
+                    "lineNumber": 5,
+                    "column": 23
                 }
             }
         ],
         "viewState": {
             "scrollLeft": 0,
             "firstPosition": {
-                "lineNumber": 5,
+                "lineNumber": 6,
                 "column": 1
             },
-            "firstPositionDeltaTop": 189
+            "firstPositionDeltaTop": 81
         },
         "contributionsState": {
             "editor.contrib.folding": {},
@@ -72,17 +72,13 @@
         {
             "state": {
                 "start": 2,
-                "end": 3,
+                "end": 4,
                 "language": "mysql",
                 "result": {
-                    "type": "text",
-                    "text": [
-                        {
-                            "type": 2,
-                            "index": 0,
-                            "resultId": "9cff2bd0-b9cb-47a5-da45-6b2271cf5971",
-                            "content": "OK, 0 records retrieved in 1.204ms"
-                        }
+                    "type": "resultIds",
+                    "list": [
+                        "9e1b7b82-eee6-4805-abb9-03aa4522c4e3",
+                        "9f9e506d-58a8-4e14-92e1-c8425986cfa6"
                     ]
                 },
                 "currentHeight": 28,
@@ -95,21 +91,110 @@
                             "length": 12
                         },
                         "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 12,
+                            "length": 13
+                        },
+                        "contentStart": 13,
                         "state": 3
                     }
                 ]
             },
-            "data": []
+            "data": [
+                {
+                    "tabId": "50113763-7453-43c0-e98c-71640dfbcdb9",
+                    "resultId": "9e1b7b82-eee6-4805-abb9-03aa4522c4e3",
+                    "rows": [
+                        {
+                            "0": "_prisma_migrations"
+                        },
+                        {
+                            "0": "admins"
+                        },
+                        {
+                            "0": "bookings"
+                        },
+                        {
+                            "0": "meeting_rooms"
+                        },
+                        {
+                            "0": "sessions"
+                        },
+                        {
+                            "0": "students"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "Tables_in_library",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 6 records retrieved in 1.577ms"
+                    },
+                    "totalRowCount": 6,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 1,
+                    "sql": "\nShow TABLES\n",
+                    "updatable": false
+                },
+                {
+                    "tabId": "50113763-7453-43c0-e98c-71640dfbcdb9",
+                    "resultId": "9f9e506d-58a8-4e14-92e1-c8425986cfa6",
+                    "rows": [],
+                    "columns": [
+                        {
+                            "title": "*",
+                            "field": "0",
+                            "dataType": {
+                                "type": 0
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 0 records retrieved in 0.772ms"
+                    },
+                    "totalRowCount": 0,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "use library",
+                    "updatable": false
+                }
+            ]
         },
         {
             "state": {
-                "start": 4,
-                "end": 4,
+                "start": 5,
+                "end": 5,
                 "language": "mysql",
                 "result": {
                     "type": "resultIds",
                     "list": [
-                        "695055ea-a541-4262-ada0-d9bb9eb86ead"
+                        "db84e6ce-d1d6-48d9-e037-4370bef13d19"
                     ]
                 },
                 "currentHeight": 277,
@@ -128,8 +213,8 @@
             },
             "data": [
                 {
-                    "tabId": "a219912b-ec53-406c-9722-774ea0938c0a",
-                    "resultId": "695055ea-a541-4262-ada0-d9bb9eb86ead",
+                    "tabId": "50113763-7453-43c0-e98c-71640dfbcdb9",
+                    "resultId": "db84e6ce-d1d6-48d9-e037-4370bef13d19",
                     "rows": [
                         {
                             "0": 1,
@@ -333,16 +418,24 @@
         },
         {
             "state": {
-                "start": 5,
-                "end": 5,
+                "start": 6,
+                "end": 6,
                 "language": "mysql",
                 "result": {
-                    "type": "resultIds",
-                    "list": [
-                        "9ede9f53-18ce-4388-d8b2-9aee2e442453"
-                    ]
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 0,
+                            "index": 0,
+                            "content": "MySQL Error (1146): Table 'library.students' doesn't exist",
+                            "language": "ansi"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": ""
+                    }
                 },
-                "currentHeight": 186,
+                "currentHeight": 28,
                 "currentSet": 1,
                 "statements": [
                     {
@@ -356,175 +449,12 @@
                     }
                 ]
             },
-            "data": [
-                {
-                    "tabId": "a219912b-ec53-406c-9722-774ea0938c0a",
-                    "resultId": "9ede9f53-18ce-4388-d8b2-9aee2e442453",
-                    "rows": [
-                        {
-                            "0": "24204031107",
-                            "1": "Avinash",
-                            "2": "avinash",
-                            "3": "MCA",
-                            "4": "MBC",
-                            "5": "2025-08-18 18:52:50"
-                        },
-                        {
-                            "0": "24204031111",
-                            "1": "SharanDeep Singh",
-                            "2": "paaji",
-                            "3": "B.Tech",
-                            "4": "CSE",
-                            "5": "2025-08-18 18:52:50"
-                        },
-                        {
-                            "0": "24204031207",
-                            "1": "Vatsal",
-                            "2": "vatsal",
-                            "3": "MCA",
-                            "4": "MBC",
-                            "5": "2025-08-18 18:52:50"
-                        },
-                        {
-                            "0": "24204031211",
-                            "1": "Deepanshu",
-                            "2": "deepu2002",
-                            "3": "MCA",
-                            "4": "MBC",
-                            "5": "2025-08-18 18:52:50"
-                        },
-                        {
-                            "0": "24204031212",
-                            "1": "Garvit",
-                            "2": "garvit",
-                            "3": "B.Tech",
-                            "4": "ECE",
-                            "5": "2025-08-18 18:52:50"
-                        }
-                    ],
-                    "columns": [
-                        {
-                            "title": "student_id",
-                            "field": "0",
-                            "dataType": {
-                                "type": 17,
-                                "characterMaximumLength": 65535,
-                                "flags": [
-                                    "BINARY",
-                                    "ASCII",
-                                    "UNICODE"
-                                ],
-                                "needsQuotes": true,
-                                "parameterFormatType": "OneOrZero"
-                            },
-                            "inPK": true,
-                            "nullable": false,
-                            "autoIncrement": false
-                        },
-                        {
-                            "title": "name",
-                            "field": "1",
-                            "dataType": {
-                                "type": 17,
-                                "characterMaximumLength": 65535,
-                                "flags": [
-                                    "BINARY",
-                                    "ASCII",
-                                    "UNICODE"
-                                ],
-                                "needsQuotes": true,
-                                "parameterFormatType": "OneOrZero"
-                            },
-                            "inPK": false,
-                            "nullable": false,
-                            "autoIncrement": false
-                        },
-                        {
-                            "title": "password",
-                            "field": "2",
-                            "dataType": {
-                                "type": 17,
-                                "characterMaximumLength": 65535,
-                                "flags": [
-                                    "BINARY",
-                                    "ASCII",
-                                    "UNICODE"
-                                ],
-                                "needsQuotes": true,
-                                "parameterFormatType": "OneOrZero"
-                            },
-                            "inPK": false,
-                            "nullable": false,
-                            "autoIncrement": false
-                        },
-                        {
-                            "title": "course",
-                            "field": "3",
-                            "dataType": {
-                                "type": 17,
-                                "characterMaximumLength": 65535,
-                                "flags": [
-                                    "BINARY",
-                                    "ASCII",
-                                    "UNICODE"
-                                ],
-                                "needsQuotes": true,
-                                "parameterFormatType": "OneOrZero"
-                            },
-                            "inPK": false,
-                            "nullable": false,
-                            "autoIncrement": false
-                        },
-                        {
-                            "title": "department",
-                            "field": "4",
-                            "dataType": {
-                                "type": 17,
-                                "characterMaximumLength": 65535,
-                                "flags": [
-                                    "BINARY",
-                                    "ASCII",
-                                    "UNICODE"
-                                ],
-                                "needsQuotes": true,
-                                "parameterFormatType": "OneOrZero"
-                            },
-                            "inPK": false,
-                            "nullable": false,
-                            "autoIncrement": false
-                        },
-                        {
-                            "title": "created_at",
-                            "field": "5",
-                            "dataType": {
-                                "type": 26,
-                                "dateTimePrecision": 8,
-                                "needsQuotes": true,
-                                "parameterFormatType": "OneOrZero"
-                            },
-                            "inPK": false,
-                            "nullable": true,
-                            "autoIncrement": false,
-                            "default": "CURRENT_TIMESTAMP"
-                        }
-                    ],
-                    "executionInfo": {
-                        "text": "OK, 5 records retrieved in 1.229ms"
-                    },
-                    "totalRowCount": 5,
-                    "hasMoreRows": false,
-                    "currentPage": 0,
-                    "index": 0,
-                    "sql": "SELECT * FROM students",
-                    "updatable": true,
-                    "fullTableName": "students"
-                }
-            ]
+            "data": []
         },
         {
             "state": {
-                "start": 6,
-                "end": 9,
+                "start": 7,
+                "end": 10,
                 "language": "mysql",
                 "result": {
                     "type": "text",
@@ -555,8 +485,8 @@
         },
         {
             "state": {
-                "start": 10,
-                "end": 10,
+                "start": 11,
+                "end": 11,
                 "language": "mysql",
                 "currentSet": 1,
                 "statements": [

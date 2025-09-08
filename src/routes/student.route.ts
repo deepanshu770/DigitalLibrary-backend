@@ -45,6 +45,7 @@ student.post(
         student_name: student.name,
         student_id: student.student_id,
         course: student.course,
+        role:'student'
       },
       JWT_SECRET
     );
